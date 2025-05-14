@@ -1,14 +1,30 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Meu Dashboard</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="ion-padding welcome-content">
+  <div class="welcome-container">
+    <ion-img src="assets/icon/wolf.png" alt="Logo" class="logo"></ion-img>
 
-<ion-content [fullscreen]="true">
-  
+    <h1>Bem-vindo ao <strong>AnalyticsPro</strong></h1>
+    <p class="subtitle">Visualize seus dados com clareza e eficiência</p>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-button 
+      expand="block" 
+      shape="round" 
+      color="primary"
+      href="/dashboard">
+      Acessar Dashboard
+      <ion-icon slot="end" name="bar-chart-outline"></ion-icon>
+    </ion-button>
+
+
+
+    <ion-card class="intro-card">
+      <ion-card-header>
+        <ion-card-title>O que você encontrará</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        📊 Painéis com gráficos interativos<br>
+        ⏱️ Dados atualizados em tempo real<br>
+        📱 Interface adaptável a qualquer dispositivo
+      </ion-card-content>
+    </ion-card>
   </div>
 </ion-content>

@@ -1,14 +1,35 @@
-// home.page.ts
 import { Component } from '@angular/core';
+import { 
+  IonContent, 
+  IonButton, 
+  IonIcon,
+  IonImg,
+  IonCard,
+  IonCardHeader,
+  IonCardTitle,
+  IonCardContent 
+} from '@ionic/angular/standalone';
 import { CommonModule } from '@angular/common';
-import { IonicModule } from '@ionic/angular';
-import { DashboardComponent } from '../components/dashboard/dashboard.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
-  standalone: true,  // ← Isso é crucial
-  imports: [IonicModule, CommonModule, DashboardComponent]  // ← Importações diretas
+  templateUrl: './home.page.html',
+  styleUrls: ['./home.page.scss'],
+  standalone: true,
+  imports: [
+    CommonModule,
+    RouterModule,
+    IonContent, 
+    IonButton, 
+    IonIcon,
+    IonImg,
+    IonCard,
+    IonCardHeader,
+    IonCardTitle,
+    IonCardContent
+  ]
 })
-export class HomePage {}
+export class HomePage {
+  constructor() { }
+}

@@ -13,3 +13,42 @@ $colors: (
   medium:     #92949c,
   light:      #f4f5f8
 );
+
+:root {
+  --ion-color-primary: #0d6efd; /* Azul vibrante */
+  --ion-color-primary-rgb: 13, 110, 253;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #0b5ed7;
+  --ion-color-primary-tint: #3d8bfd;
+
+  --ion-background-color: #121212;
+  --ion-background-color-rgb: 18, 18, 18;
+
+  --ion-text-color: #ffffff;
+  --ion-text-color-rgb: 255, 255, 255;
+
+  --ion-toolbar-background: #1e1e1e;
+  --ion-item-background: #1e1e1e;
+  --ion-card-background: #1e1e1e;
+
+  --ion-color-step-50: #1a1a1a;
+  --ion-color-step-100: #222;
+  --ion-color-step-150: #2a2a2a;
+  --ion-color-step-200: #333;
+  --ion-color-step-250: #3b3b3b;
+  --ion-color-step-300: #444;
+  --ion-color-step-350: #4c4c4c;
+  --ion-color-step-400: #555;
+  --ion-color-step-450: #5d5d5d;
+  --ion-color-step-500: #666;
+  --ion-color-step-550: #6e6e6e;
+  --ion-color-step-600: #777;
+  --ion-color-step-650: #7f7f7f;
+  --ion-color-step-700: #888;
+  --ion-color-step-750: #909090;
+  --ion-color-step-800: #999;
+  --ion-color-step-850: #a1a1a1;
+  --ion-color-step-900: #aaa;
+  --ion-color-step-950: #b2b2b2;
+}
