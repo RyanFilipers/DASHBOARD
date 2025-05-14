@@ -47,8 +47,8 @@ export class DashboardComponent implements AfterViewInit {
       data: {
         labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai'], // Rótulos para os meses
         datasets: [{
-          label: 'Vendas 2023', // Legenda do gráfico
-          data: [12, 19, 3, 5, 2], // Dados das vendas por mês
+          label: 'Vendas 2024', // Legenda do gráfico
+          data: [35, 20, 24, 36, 15], // Dados das vendas por mês
           backgroundColor: 'rgba(75, 192, 192, 0.2)', // Cor de fundo da linha
           borderColor: 'rgba(75, 192, 192, 1)', // Cor da linha
           borderWidth: 1, // Espessura da linha
@@ -65,9 +65,9 @@ export class DashboardComponent implements AfterViewInit {
     new Chart(this.doughnutCanvas.nativeElement, {
       type: 'doughnut', // Tipo de gráfico: rosquinha
       data: {
-        labels: ['Desktop', 'Mobile', 'Tablet'], // Rótulos para os tipos de dispositivos
+        labels: ['Loja Física', 'Instagram', 'Whatsapp'], // Rótulos para os tipos de dispositivos
         datasets: [{
-          data: [35, 45, 20], // Dados para os dispositivos
+          data: [30, 60, 40], // Dados para os dispositivos
           backgroundColor: [
             'rgba(255, 99, 132, 0.7)', // Cor para Desktop
             'rgba(54, 162, 235, 0.7)', // Cor para Mobile
@@ -81,7 +81,7 @@ export class DashboardComponent implements AfterViewInit {
     new Chart(this.barCanvas.nativeElement, {
       type: 'bar', // Tipo de gráfico: barras
       data: {
-        labels: ['Produto A', 'Produto B', 'Produto C', 'Produto D'], // Rótulos para os produtos
+        labels: ['iPhone XR', 'iPhone 12 Pro', 'Galaxy S23 Ultra', 'Galaxy Z Flip'], // Rótulos para os produtos
         datasets: [{
           label: 'Vendas por Produto', // Legenda do gráfico
           data: [12, 19, 3, 5], // Dados das vendas por produto
