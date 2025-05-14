@@ -1,0 +1,92 @@
+<ion-content>
+  <ion-grid>
+    <!-- Cards de Resumo -->
+    <ion-row>
+      <ion-col size="12" size-md="6" size-lg="3">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Total Vendas</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <h2>R$ 12.345,00</h2>
+            <p>+12% em relação ao mês passado</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      
+      <ion-col size="12" size-md="6" size-lg="3">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Clientes</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <h2>245</h2>
+            <p>+8 novos esta semana</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      
+      <ion-col size="12" size-md="6" size-lg="3">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Pedidos</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <h2>56</h2>
+            <p>5 pendentes</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      
+      <ion-col size="12" size-md="6" size-lg="3">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Meta</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <h2>78%</h2>
+            <ion-progress-bar value="0.78"></ion-progress-bar>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <!-- Gráficos -->
+    <ion-row>
+      <ion-col size="12" size-lg="8">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Vendas Mensais</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <canvas #lineCanvas id="lineCanvas"></canvas>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      
+      <ion-col size="12" size-lg="4">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Dispositivos</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <canvas #doughnutCanvas id="doughnutCanvas"></canvas>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Vendas por Produto</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <canvas #barCanvas id="barCanvas"></canvas>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
