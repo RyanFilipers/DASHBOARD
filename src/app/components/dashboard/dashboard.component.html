@@ -1,47 +1,57 @@
 <ion-content>
+  <!-- Container principal que envolve o conteúdo da página -->
   <ion-grid>
-    <!-- Cards de Resumo -->
+    
+    <!-- Linha de Cards de Resumo -->
     <ion-row>
+      <!-- Coluna única em telas pequenas, metade em telas médias, 1/4 em telas grandes -->
       <ion-col size="12" size-md="6" size-lg="3">
         <ion-card>
+          <!-- Cabeçalho do card com o título -->
           <ion-card-header>
             <ion-card-title>Total Vendas</ion-card-title>
           </ion-card-header>
+          <!-- Conteúdo do card com os valores e variação -->
           <ion-card-content>
             <h2>R$ 12.345,00</h2>
             <p>+12% em relação ao mês passado</p>
           </ion-card-content>
         </ion-card>
       </ion-col>
-      
-      <!-- Outros cards de resumo... -->
+
+      <!-- Outros cards de resumo podem ser adicionados aqui, repetindo o mesmo padrão -->
     </ion-row>
 
-    <!-- Gráficos -->
+    <!-- Linha de Gráficos principais -->
     <ion-row>
+      <!-- Gráfico de linha ocupando 8 colunas em telas grandes -->
       <ion-col size="12" size-lg="8">
         <ion-card>
           <ion-card-header>
             <ion-card-title>Vendas Mensais</ion-card-title>
           </ion-card-header>
           <ion-card-content>
+            <!-- Canvas onde o gráfico de linhas será renderizado -->
             <canvas #lineCanvas></canvas>
           </ion-card-content>
         </ion-card>
       </ion-col>
-      
+
+      <!-- Gráfico de pizza ocupando 4 colunas em telas grandes -->
       <ion-col size="12" size-lg="4">
         <ion-card>
           <ion-card-header>
             <ion-card-title>Dispositivos</ion-card-title>
           </ion-card-header>
           <ion-card-content>
+            <!-- Canvas onde o gráfico de pizza será renderizado -->
             <canvas #doughnutCanvas></canvas>
           </ion-card-content>
         </ion-card>
       </ion-col>
     </ion-row>
 
+    <!-- Linha com gráfico de barras ocupando largura total -->
     <ion-row>
       <ion-col size="12">
         <ion-card>
@@ -49,10 +59,13 @@
             <ion-card-title>Vendas por Produto</ion-card-title>
           </ion-card-header>
           <ion-card-content>
+            <!-- Canvas onde o gráfico de barras será renderizado -->
             <canvas #barCanvas></canvas>
           </ion-card-content>
         </ion-card>
       </ion-col>
     </ion-row>
+
   </ion-grid>
 </ion-content>
+

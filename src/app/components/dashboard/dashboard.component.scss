@@ -1,32 +1,39 @@
+/* Estilização dos cartões */
 ion-card {
-  margin: 10px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px; /* Espaçamento externo ao redor do card */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar o card */
 }
 
+/* Cabeçalho do card com espaçamento inferior menor */
 ion-card-header {
-  padding-bottom: 0;
+  padding-bottom: 0; /* Remove o espaçamento inferior padrão */
 }
 
+/* Título do card */
 ion-card-title {
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 1.2rem; /* Tamanho da fonte do título */
+  font-weight: bold; /* Deixa o texto em negrito */
 }
 
+/* Estilos aplicados ao conteúdo do card */
 ion-card-content {
+  /* Estilização específica para o h2 dentro do conteúdo */
   h2 {
-    font-size: 1.8rem;
-    margin: 10px 0;
-    color: var(--ion-color-primary);
+    font-size: 1.8rem; /* Tamanho maior para chamar atenção ao valor principal */
+    margin: 10px 0; /* Espaçamento superior e inferior */
+    color: var(--ion-color-primary); /* Cor principal definida no tema do app */
   }
 
+  /* Estilização para o parágrafo informativo */
   p {
-    color: var(--ion-color-medium);
-    margin: 5px 0;
+    color: var(--ion-color-medium); /* Cor média para menos destaque */
+    margin: 5px 0; /* Espaçamento entre o parágrafo e os outros elementos */
   }
 }
 
+/* Ajuste dos elementos canvas (gráficos) */
 canvas {
-  width: 100% !important;
-  height: auto !important;
+  width: 100% !important; /* Ocupa toda a largura disponível */
+  height: auto !important; /* Altura ajustada automaticamente proporcional à largura */
 }

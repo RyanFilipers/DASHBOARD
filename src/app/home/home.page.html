@@ -1,29 +1,34 @@
-<ion-content class="ion-padding welcome-content">
-  <div class="welcome-container">
+<ion-content class="ion-padding welcome-content"> <!-- Conteúdo principal da página com padding -->
+  <div class="welcome-container"> <!-- Container para o conteúdo de boas-vindas -->
+
+    <!-- Logo da aplicação, imagem com link de localização -->
     <ion-img src="assets/icon/wolf.png" alt="Logo" class="logo"></ion-img>
 
+    <!-- Título principal de boas-vindas -->
     <h1>Bem-vindo ao <strong>AnalyticsPro</strong></h1>
+    
+    <!-- Subtítulo explicativo -->
     <p class="subtitle">Visualize seus dados com clareza e eficiência</p>
 
+    <!-- Botão para acessar o Dashboard -->
     <ion-button 
-      expand="block" 
-      shape="round" 
-      color="primary"
-      href="/dashboard">
-      Acessar Dashboard
-      <ion-icon slot="end" name="bar-chart-outline"></ion-icon>
+      expand="block"  <!-- Botão que ocupa toda a largura disponível -->
+      shape="round"   <!-- Botão com bordas arredondadas -->
+      color="primary" <!-- Cor do botão (usando a cor primária definida no tema) -->
+      href="/dashboard"> <!-- Rota para o dashboard -->
+      Acessar Dashboard <!-- Texto do botão -->
+      <ion-icon slot="end" name="bar-chart-outline"></ion-icon> <!-- Ícone no final do botão -->
     </ion-button>
 
-
-
+    <!-- Card informativo sobre a aplicação -->
     <ion-card class="intro-card">
-      <ion-card-header>
-        <ion-card-title>O que você encontrará</ion-card-title>
+      <ion-card-header> <!-- Cabeçalho do card -->
+        <ion-card-title>O que você encontrará</ion-card-title> <!-- Título do card -->
       </ion-card-header>
-      <ion-card-content>
-        📊 Painéis com gráficos interativos<br>
-        ⏱️ Dados atualizados em tempo real<br>
-        📱 Interface adaptável a qualquer dispositivo
+      <ion-card-content> <!-- Conteúdo do card -->
+        📊 Painéis com gráficos interativos<br> <!-- Descrição do primeiro recurso -->
+        ⏱️ Dados atualizados em tempo real<br> <!-- Descrição do segundo recurso -->
+        📱 Interface adaptável a qualquer dispositivo <!-- Descrição do terceiro recurso -->
       </ion-card-content>
     </ion-card>
   </div>
